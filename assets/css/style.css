@@ -40,3 +40,15 @@ body img{
 body img:hover{
     transform: scale(1.1);
 }
+
+/* ট্যাব বাটনে যখন ক্লিক করা হবে (অর্থাৎ active থাকবে) */
+.nav-tabs .nav-link.active {
+    background-color: var(--bs-primary) !important; /* bg-primary কালার */
+    color: #fff !important;                        /* text-light কালার */
+    border-color: var(--bs-primary) !important;    /* বর্ডারের কালারও ম্যাচ করার জন্য */
+}
+
+/* মাউস হভার করলে বা নরমাল অবস্থায় দেখতে কেমন হবে (ঐচ্ছিক) */
+.nav-tabs .nav-link {
+    color: #495057; /* নরমাল টেক্সট কালার */
+}
