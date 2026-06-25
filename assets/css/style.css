@@ -41,14 +41,29 @@ body img:hover{
     transform: scale(1.1);
 }
 
-/* ট্যাব বাটনে যখন ক্লিক করা হবে (অর্থাৎ active থাকবে) */
-.nav-tabs .nav-link.active {
-    background-color: var(--bs-primary) !important; /* bg-primary কালার */
-    color: #fff !important;                        /* text-light কালার */
-    border-color: var(--bs-primary) !important;    /* বর্ডারের কালারও ম্যাচ করার জন্য */
+/* ট্যাব বাটনের সাধারণ স্টাইল (যখন ক্লিক করা থাকবে না) */
+.nav-tabs .nav-link {
+    color: #198754 !important;       /* বুটস্ট্র্যাপের সাকসেস/সবুজ টেক্সট কালার */
+    border: 1px solid #198754;      /* চারপাশের সবুজ বর্ডার */
+    margin: 0 5px;                  /* বাটনগুলোর মাঝখানে একটু ফাঁকা জায়গা */
+    border-radius: 50px !important; /* বাটনগুলোকে ক্যাপসুলের মতো গোল করার জন্য */
+    transition: all 0.3s ease;
 }
 
-/* মাউস হভার করলে বা নরমাল অবস্থায় দেখতে কেমন হবে (ঐচ্ছিক) */
-.nav-tabs .nav-link {
-    color: #495057; /* নরমাল টেক্সট কালার */
+/* মাউস হভার করলে (মাউস উপরে নিলে) */
+.nav-tabs .nav-link:hover {
+    background-color: rgba(25, 135, 84, 0.1); /* হালকা সবুজ ব্যাকগ্রাউন্ড */
+    color: #198754 !important;
+}
+
+/* ট্যাব বাটনে যখন ক্লিক করা হবে (অর্থাৎ active থাকবে) */
+.nav-tabs .nav-link.active {
+    background-color: #0d6efd !important; /* আপনার চাহিদামতো পারফেক্ট bg-primary নীল কালার */
+    color: #ffffff !important;            /* টেক্সট সাদা (text-light) */
+    border-color: #0d6efd !important;    /* বর্ডারও নীল হয়ে যাবে */
+}
+
+/* বুটস্ট্র্যাপের ডিফল্ট নিচের সোজা দাগটি (Border Line) মুছে ফেলার জন্য */
+.nav-tabs {
+    border-bottom: none !important;
 }
