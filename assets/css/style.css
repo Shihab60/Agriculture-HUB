@@ -1,10 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#navbar-section{
+
+
+#navbar-section {
     position: sticky;
     top: 0;
     z-index: 999;
+}
+
+#banner,
+#carouselExampleCaptions {
+    height: 80vh;
+    overflow: hidden;
+}
+
+#banner,
+#carouselExampleCaptions .carousel-item img {
+    width: 100%;
+    height: 80vh;
+}
+
+#banner img:hover{
+    transform: none;
+}
+
+
+.carousel-indicators .active,
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+body img{
+    transition: 0.3s;
+}
+body img:hover{
+    transform: scale(1.1);
 }
